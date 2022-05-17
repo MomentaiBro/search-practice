@@ -1,10 +1,14 @@
 import React from 'react'
 import './SearchBar.css'
 
-function SearchBar() {
+function SearchBar({placeholder, data}) {
   return (
-    <div>
-        SearchBar Component
+    <div className='search'>
+        <div className='searchInputs'>
+            <input type="search" placeholder={placeholder}/>
+            <div className='searchIcon'></div>
+        </div>
+        <div className='dataResult'></div>
     </div>
   )
 }
